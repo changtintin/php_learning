@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wen-ting Zhang</title>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<link href="myCss.css" rel="stylesheet">
+</head>
+<body background="BeigeWallpaper.jpg">
+	<a href="./my_website.html">
+	<div class="title">
+		<h1>張雯婷 WEN-TING ZHANG</h1>
+		<h5>1998年生，曾於台灣銀行、文化資產局實習，</h5>
+		<p>注重時間管理，喜歡有條不紊的完成工作。</p>
+	</div></a>
+	<div class="navbar">
+		<a class="navfont" href="#" id="my_project">我的專案</a> <a class="navfont" href="#" id="experience">工作經歷</a> <a class="navfont" href="#" id="ability">專長</a> <a class="navfont" href="#" id="condition">求職條件</a>
+	</div>
+	<div class="row">
+		<div class="column side">
+			<h2 style="font-family: 'Montserrat';">外部連結<br>
+			External Link</h2>
+			<div class="flex-container">
+				<div class="fontbig">
+					<a href="https://drive.google.com/drive/folders/1NVA1EgtKfbT7siF6udKVsvmiPSxXgw5Z" target="https://drive.google.com/drive/folders/1NVA1EgtKfbT7siF6udKVsvmiPSxXgw5Z">企劃書作品</a>
+				</div>
+				<div class="fontbig">
+					<a href="https://drive.google.com/drive/folders/1Ck0Z4rdf_avROOn-kxEjd5QoKUX1IpVd" target="https://drive.google.com/drive/folders/1Ck0Z4rdf_avROOn-kxEjd5QoKUX1IpVd">簡報作品</a>
+				</div>
+				<div class="fontbig">
+					<a href="https://drive.google.com/drive/folders/1BDlWTubJBAHrM8idRCbmDK4MQmMl_EUq?usp=sharing" target="https://drive.google.com/drive/folders/1BDlWTubJBAHrM8idRCbmDK4MQmMl_EUq?usp=sharing">平面設計作品</a>
+				</div>
+				<hr class="horizontal_line">
+				<h2 style="font-family: 'Montserrat';">其他平台</h2>
+				<div class="fontbig">
+					<a href="https://www.cakeresume.com/tintin-chang" target="https://www.cakeresume.com/tintin-chang">Cake Resume</a>
+				</div>
+				<div class="fontbig">
+					<a href="https://pda.104.com.tw/profile/share/jHJPqMmhHStkJCV49p4eTfYfgiy2ZiRJ" target="https://pda.104.com.tw/profile/share/jHJPqMmhHStkJCV49p4eTfYfgiy2ZiRJ">104人力銀行</a>
+				</div>
+			</div>
+			<div class="contact_me">
+				<hr class="horizontal_line">
+				<h2 style="font-family: 'Montserrat';">留言<br>
+				Leave your message!</h2><input placeholder="留言" style=" background-color: rgb(220, 226, 181);	font-family: 'jf-openhuninn-1.1';border-style: none; font-size: 10pt;width: 100%;" type="text" ><br>
+				<p></p>
+				<button class="button button1">Enter</button>
+				<hr class="horizontal_line">
+			</div>
+		</div>
+		<div class="column middle" id="coloumn_middle">
+			<h1 style="font-family: 'Montserrat';font-weight: bolder">關於我……<br>
+			About me……</h1><img alt="yaki photo" src="http://fakeimg.pl/300x300/" width="460">
+			<p>畢業於國立台南藝術大學，主修藝術管理。</p>
+			<p>在學期間透過課堂報告，培養簡報製作以及條理分明的表達能力，於畢業前獨立完成《我的天空一直晴朗 邱荷恬畢業音樂會》之行政與企劃工作。</p>
+			<p>課餘時間喜歡以英文汲取知識，透過閱讀原文小說以及觀賞美劇，考取多益金色證書865分。</p>
+			<p>曾到菲律賓英文語言學校體驗當地生活，與不同國籍同學交流，對於從未離開台灣的我而言，第一次可以在日常生活中大量使用英文，也看見同齡的外國人比我們眼界寬廣太多，讓我比以往更加關注國際脈動，付出更多努力精進自我能力。</p>
+			<p>大二下學期有幸與教授一同至中國福州與閩江學院進行學術交流，從中獲益良多，激勵自我必須放眼全球，且持續學習。</p>
+		</div>
+	</div>
+	<script>
+	   $('#my_project').click(function () {
+	       document.getElementById("coloumn_middle").innerHTML='<object style="width:100%; height:100%;" type="text/html" data="myproject.html" ><\/object>';
+	   });
+	   $('#experience').click(function () {
+	       document.getElementById("coloumn_middle").innerHTML='<object style="width:100%; height:100%;" type="text/html" data="experience.html" ><\/object>';
+	   });
+	   $('#condition').click(function () {
+	       document.getElementById("coloumn_middle").innerHTML='<object style="width:100%; height:100%;" type="text/html" data="condition.html" ><\/object>';
+	   });
+	   $('#ability').click(function () {
+	       document.getElementById("coloumn_middle").innerHTML='<object style="width:100%; height:100%;" type="text/html" data="ability.html" ><\/object>';
+	   });
+	</script>
+</body>
+</html>
