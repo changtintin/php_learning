@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    1321312<span id="a" style="color: brown;">5</span><span id="as">127389</span>
+    <button id="btn1">button1</button>
+    <button id="btn2">button2</button>
+    <button id="btn3">button3</button>
+    <br>
+    <code id="answer">asjidoajsdioajsidajio  sjaiodjasio</code>
+</body>
+
+<script>
+    a = document.getElementById("a");  // 
+    console.log(a); //output/echo
+
+    document.getElementById("btn1").onclick = function() {
+        a.style.display = "none"; //隱藏
+        console.log(a);
+    }
+
+    btn2 = document.getElementById("btn2");
+    btn2.onclick = function() {
+        a.style.visibility = "hidden";  //隱藏(會留空格)
+        console.log(a);
+    }
+
+    document.getElementById("btn3").onclick =  function() {
+        document.getElementById("answer").innerHTML = ""; 
+    }
+</script>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="n_length">Length</label>
+    <input type="text" id="length" name="n_length"><br><br>
+    <label for="n_width">Width</label>
+    <input type="text" id="width" name="n_width"><br><br>
+    <input type="submit" id="submit" ><br>
+    <code id="output">
+
+    </code>
+</body>
+<script>
+    document.getElementById("submit").onclick = function() {
+        document.getElementById("output").innerHTML = " ";
+        l = document.getElementById("length").value;
+        w = document.getElementById("width").value;
+        for(i=1; i<=w;i++ ){
+            
+            for(j=1; j<=l; j++){
+                
+                if(j==l){
+                    document.getElementById("output").innerHTML += i*j + " " +"<br>";
+                }
+                else{
+                    document.getElementById("output").innerHTML += i*j+ " " ;
+                }
+            }
+
+        }
+    }
+    
+</script>
+</html>
