@@ -22,25 +22,24 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/temprac',function(){
+Route::get('/temprac', function () {
     return view('template_practice');
 });
 
-Route ::get('/new',function(){
+Route::get('/new', function () {
     return view('/new_file/latte');
 });
 
-Route::get('/getnum',[Test02Controller::class,'hasNumber']);
+Route::get('/getnum', [Test02Controller::class, 'hasNumber'])
+    ->name('asdasd');
 
-Route::get('/getname', [Test01Controller::class,'hasName']);
+Route::get('/getname', [Test01Controller::class, 'hasName']);
 
 
 // Route::match(['get', 'post'], '/postname', function(){
 //     return view('/post_name');
 // });
 
-Route::post('/postname', [Test03Controller::class,'postName']);
+Route::post('/postname', [Test03Controller::class, 'postName']);
 
-Route::get('/postname', [Test03Controller::class,'getName']);
-
-
+Route::get('/postname', [Test03Controller::class, 'getName']);

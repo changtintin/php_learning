@@ -9,7 +9,7 @@
     <h3>Simple Calculator</h3>
     
     <li>
-        <form action="http://127.0.0.1:8001/home" method="GET">
+        <form action="{{route('square')}}" method="GET">
             Square
             <input type="text" name="square_input" placeholder="Enter a number">
             <input type="submit" name="square_submit" class="submit_btn">
@@ -17,7 +17,7 @@
     </li>
 
     <li>
-        <form action="http://127.0.0.1:8001/home" method="GET">
+        <form action="{{route('root')}}" method="GET">
             Square root
             <input type="text" name="root_input" placeholder="Enter a number">
             <input type="submit" name="root_submit" class="submit_btn">
@@ -25,7 +25,7 @@
     </li>
 
     <li>
-        <form action="http://127.0.0.1:8001/home" method="GET">
+        <form action="{{route('prime')}}" method="GET">
             Prime Factorization
             <input type="text" name="prime_input" placeholder="Enter a number">
             <input type="submit" name="prime_submit" class="submit_btn">
@@ -37,6 +37,12 @@
             Ans.
             @isset($square_output)
                 {{$square_output}}
+            @endisset
+            @isset($root_output)
+                {{$root_output}}
+            @endisset
+            @isset($prime_output)
+                {{$prime_output}}
             @endisset
 
         </h3>
