@@ -124,7 +124,6 @@ class SurveyController extends Controller
     public function destroy(Survey $survey)
     {
         $survey->delete();
-        return Response(Survey::get(), Response::HTTP_OK);
     }
     public function delete()
     {

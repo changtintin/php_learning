@@ -1,4 +1,4 @@
-@isset($show_output))
+@isset($show_output)
     @foreach ($show_output as $info)
         <table class="table table-striped table-dark" >
             <thead>

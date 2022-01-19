@@ -24,3 +24,6 @@ Route::resource('survey', SurveyController::class);
 Route::get('/home/show', [SurveyController::class, 'show_bridge'])->name('show_bridge');
 Route::get('/home/showall', [SurveyController::class, 'show_all'])->name('show_all');
 Route::get('/home/delete', [SurveyController::class, 'delete'])->name('delete');
+Route::match(['get', 'post'], '/a', function () {
+    return view('a');
+})->name('a');
