@@ -53,14 +53,7 @@ class SurveyController extends Controller
     //    想要把這個表單接收的數字變成show顯示項目的id 
     public function show_bridge(Request $num)
     {
-
         return  $num->input();
-
-        // $input = isset($_GET['id']);
-        // $id = Survey::get($input);
-        // return view('mainpage', [
-        //     "br_output" => $id,
-        // ]);
     }
 
     public function show_all()

@@ -15,10 +15,10 @@ class CreateSurveysTable extends Migration
     {
         Schema::create('surveys', function (Blueprint $table) {
             $table->id();
-            $table->string('name')->default('jack');
-            $table->string('email')->default('jack@gmail.com');
-            $table->integer('salary')->default('99999');
-            $table->string('personality')->default('wow');
+            $table->string('name');
+            $table->string('email');
+            $table->integer('salary');
+            $table->string('personality');
             $table->timestamps();
         });
     }

@@ -2,7 +2,9 @@
 
 namespace Database\Seeders;
 
+use App\Models\Survey;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Schema;
 
 class DatabaseSeeder extends Seeder
 {
@@ -13,6 +15,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        Schema::disableForeignKeyConstraints();
+        Survey::truncate();
+        Survey::factory(40) -> create();
+        Schema::enableForeignKeyConstraints();
     }
 }

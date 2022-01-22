@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use Faker\Factory as FakerFactory;
+use Faker\Generator as FakerGenerator;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Sanctum\Sanctum;
 
@@ -16,6 +18,9 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         Sanctum::ignoreMigrations();
+        $this->app->singleton(FakerGenerator::class, function () {
+            return FakerFactory::create('en_GB');
+          });
     }
 
     /**
@@ -27,4 +32,5 @@ class AppServiceProvider extends ServiceProvider
     {
         //
     }
+    
 }
